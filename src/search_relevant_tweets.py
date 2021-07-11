@@ -13,10 +13,10 @@ class SearchRelevantTweets:
     def search(self) -> dict:
         query = f'{self.player.get("full_name")} -is:retweet has:videos has:media lang:en -is:reply -is:quote'
         first_pass = self.make_request(query=query)
-        print(first_pass)
         second_pass = self.make_request(query=query, next_token=first_pass.get('next_token'))
-        print(second_pass)
-        return first_pass.get('most_shared_tweet') if first_pass.get('shares') >= second_pass.get('shares') else second_pass.get('most_shared_tweet')
+        return_tweet = first_pass.get('most_shared_tweet') if first_pass.get('shares') >= second_pass.get('shares') else second_pass.get('most_shared_tweet')
+
+        return return_tweet if first_pass.get('shares') >= 10 and second_pass.get('shares') >= 10 else {}
 
     def make_request(self, query: str, next_token: Optional[str] = None):
         start_time = (datetime.now() - timedelta(hours=5)).isoformat(timespec='seconds')

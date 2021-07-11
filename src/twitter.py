@@ -26,7 +26,7 @@ class Twitter:
         )
         relevant_tweet = SearchRelevantTweets(twitter_api=twitter_api, player=json.loads(content)).search()
         print(f'The Relevant Tweet: {relevant_tweet}')
-        relevant_tweet_id = relevant_tweet.get('id')
+        relevant_tweet_id = relevant_tweet.get('id', None)
 
         if len(relevant_tweet_id) > 0:
             twitter_api_v1 = TwitterAPI(
