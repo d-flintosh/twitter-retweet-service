@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from TwitterAPI import TwitterAPI, TwitterRequestError, TwitterConnectionError
 
 from src.authentication.twitter_auth import get_credentials
+from src.search_relevant_tweets import SearchRelevantTweets
 
 
 class Twitter:
@@ -14,54 +15,26 @@ class Twitter:
 
     def send_tweet(self, content: str):
         print(f'Sending tweet to: {self.twitter_credentials.get("twitter_handle")}')
-        print(content)
-        # twitter_api = TwitterAPI(
-        #     consumer_key=self.application_credentials.get('consumer_key'),
-        #     consumer_secret=self.application_credentials.get('consumer_secret'),
-        #     access_token_key=self.application_credentials.get('access_token_key'),
-        #     access_token_secret=self.application_credentials.get('access_token_secret'),
-        #     api_version='2'
-        # )
-        # player_object = json.loads(content)
-        #
-        # start_time = (datetime.now() - timedelta(hours=5)).isoformat(timespec='seconds')
+        print(f'The Content: {content}')
 
-        # try:
-        #     # r = twitter_api.request(
-        #     #     'tweets/search/recent', {
-        #     #         'query': player_object.get('full_name'),
-        #     #         'tweet.fields': 'author_id,public_metrics',
-        #     #         'expansions': 'author_id,referenced_tweets.id',
-        #     #         'start_time': f'{start_time}Z'
-        #     #     }
-        #     # )
-        #     ids = ','.join(['1414287019388383236'])
-        #
-        #     r = twitter_api.request(
-        #         'tweets', {
-        #             'ids': ids,
-        #             'tweet.fields': 'author_id,public_metrics',
-        #             'expansions': 'author_id,referenced_tweets.id',
-        #             'user.fields': 'public_metrics'
-        #         }
-        #     )
-        #
-        #     for item in r:
-        #         print(item)
-        #
-        #     print('\nINCLUDES')
-        #     print(r.json()['includes'])
-        #
-        #     print('\nQUOTA')
-        #     print(r.get_quota())
-        #
-        # except TwitterRequestError as e:
-        #     print(e.status_code)
-        #     for msg in iter(e):
-        #         print(msg)
-        #
-        # except TwitterConnectionError as e:
-        #     print(e)
-        #
-        # except Exception as e:
-        #     print(e)
+        twitter_api = TwitterAPI(
+            consumer_key=self.application_credentials.get('consumer_key'),
+            consumer_secret=self.application_credentials.get('consumer_secret'),
+            access_token_key=self.application_credentials.get('access_token_key'),
+            access_token_secret=self.application_credentials.get('access_token_secret'),
+            api_version='2'
+        )
+        relevant_tweet = SearchRelevantTweets(twitter_api=twitter_api, player=json.loads(content)).search()
+        print(f'The Relevant Tweet: {relevant_tweet}')
+        relevant_tweet_id = relevant_tweet.get('id')
+
+        if len(relevant_tweet_id) > 0:
+            twitter_api_v1 = TwitterAPI(
+                consumer_key=self.application_credentials.get('consumer_key'),
+                consumer_secret=self.application_credentials.get('consumer_secret'),
+                access_token_key=self.twitter_credentials.get('access_token_key'),
+                access_token_secret=self.twitter_credentials.get('access_token_secret'),
+            )
+
+            response = twitter_api_v1.request('statuses/retweet', {'id': relevant_tweet_id})
+            print(f'The response code: {response.status_code}')
