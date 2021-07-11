@@ -1,0 +1,14 @@
+steps:
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    args:
+      - gcloud
+      - functions
+      - deploy
+      - twitter-retweet-service
+      - --region=us-central1
+      - --source=.
+      - --runtime=python39
+      - --entry-point=entrypoint
+      - --memory=128MB
+      - --service-account=twitter-message-service@sports-data-service.iam.gserviceaccount.com
+      - --trigger-topic=twitter-retweet-service-pubsub
