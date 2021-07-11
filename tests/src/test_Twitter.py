@@ -6,7 +6,7 @@ import pytest as pytest
 from src.twitter import Twitter
 
 
-# @pytest.mark.skip(reason="this was only a test")
+@pytest.mark.skip(reason="this was only a test")
 class TestTwitter:
     @dataclass
     class Fixture:
