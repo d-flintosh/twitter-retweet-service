@@ -1,3 +1,5 @@
+import json
+
 from google.cloud import secretmanager_v1
 from google.cloud.secretmanager_v1 import AccessSecretVersionRequest
 
