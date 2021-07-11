@@ -1,2 +1,2 @@
 google-cloud-secret-manager==2.5.0
-TwitterAPI==2.7.3
+TwitterAPI==2.7.4

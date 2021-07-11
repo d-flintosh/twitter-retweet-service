@@ -36,5 +36,8 @@ class Twitter:
                 access_token_secret=self.twitter_credentials.get('access_token_secret'),
             )
 
-            response = twitter_api_v1.request('statuses/retweet', {'id': relevant_tweet_id})
+            response = twitter_api_v1.request(
+                f'statuses/retweet/:{relevant_tweet_id}.json'
+            )
             print(f'The response code: {response.status_code}')
+            print(response.json())

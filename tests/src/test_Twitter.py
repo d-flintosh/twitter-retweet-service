@@ -6,7 +6,7 @@ import pytest as pytest
 from src.twitter import Twitter
 
 
-@pytest.mark.skip(reason="this was only a test")
+# @pytest.mark.skip(reason="this was only a test")
 class TestTwitter:
     @dataclass
     class Fixture:
@@ -17,7 +17,7 @@ class TestTwitter:
         test_tweet = {
             'full_name': 'Francisco Lindor'
         }
-        Twitter(school='fsu').send_tweet(content=json.dumps(test_tweet))
+        Twitter(school='notredame').send_tweet(content=json.dumps(test_tweet))
 
         return TestTwitter.Fixture(
             temp=True
