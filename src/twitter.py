@@ -28,7 +28,7 @@ class Twitter:
         print(f'The Relevant Tweet: {relevant_tweet}')
         relevant_tweet_id = relevant_tweet.get('id', None)
 
-        if len(relevant_tweet_id) > 0:
+        if relevant_tweet_id and len(relevant_tweet_id) > 0:
             twitter_api_v1 = TwitterAPI(
                 consumer_key=self.application_credentials.get('consumer_key'),
                 consumer_secret=self.application_credentials.get('consumer_secret'),
@@ -37,7 +37,7 @@ class Twitter:
             )
 
             response = twitter_api_v1.request(
-                f'statuses/retweet/:{relevant_tweet_id}.json'
+                f'statuses/retweet/:{relevant_tweet_id}'
             )
             print(f'The response code: {response.status_code}')
             print(response.json())

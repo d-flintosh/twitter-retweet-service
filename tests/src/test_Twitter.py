@@ -17,7 +17,7 @@ class TestTwitter:
         test_tweet = {
             'full_name': 'Francisco Lindor'
         }
-        Twitter(school='notredame').send_tweet(content=json.dumps(test_tweet))
+        Twitter(school='connecticut').send_tweet(content=json.dumps(test_tweet))
 
         return TestTwitter.Fixture(
             temp=True
