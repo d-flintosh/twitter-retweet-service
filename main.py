@@ -1,6 +1,6 @@
 import base64
 
-from src.twitter import Twitter
+from src.twitter_for_player import TwitterForPlayer
 
 
 def entrypoint(event, context):
@@ -25,4 +25,4 @@ def entrypoint(event, context):
 
     data = base64.b64decode(event['data']).decode('utf-8')
     school = event.get('attributes', {}).get('school', 'fsu')
-    Twitter(school=school).send_tweet(content=data)
+    TwitterForPlayer(school=school, content=data).send_tweet()
