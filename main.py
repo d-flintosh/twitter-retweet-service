@@ -1,5 +1,6 @@
 import base64
 
+from src.twitter_for_event import TwitterForEvent
 from src.twitter_for_player import TwitterForPlayer
 
 
@@ -24,5 +25,10 @@ def entrypoint(event, context):
     """
 
     data = base64.b64decode(event['data']).decode('utf-8')
-    school = event.get('attributes', {}).get('school', 'fsu')
-    TwitterForPlayer(school=school, content=data).send_tweet()
+    attributes = event.get('attributes', {})
+    school = attributes.get('school', None)
+    event = attributes.get('event', None)
+    if school:
+        TwitterForPlayer(school=school, content=data).send_tweet()
+    elif event:
+        TwitterForEvent(attributes=attributes).find_retweet()
