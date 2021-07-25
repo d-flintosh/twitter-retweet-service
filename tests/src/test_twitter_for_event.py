@@ -1,12 +1,9 @@
-import json
 from dataclasses import dataclass
 from typing import List
 from unittest.mock import patch, Mock, call
 
 import pytest as pytest
 
-from src.json_encoder import EnhancedJSONEncoder
-from src.player import Player
 from src.twitter_for_event import TwitterForEvent
 
 
