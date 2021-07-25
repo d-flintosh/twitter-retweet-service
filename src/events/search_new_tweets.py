@@ -30,7 +30,8 @@ class SearchNewTweets:
                 'start_time': f'{start_time}Z'
             }
 
-            if most_recent_tweet.get('id', None):
+            most_recent_tweet_id = most_recent_tweet.get('id', None)
+            if most_recent_tweet_id and int(most_recent_tweet_id) > 0:
                 request_options['since_id'] = most_recent_tweet.get('id')
 
             response: TwitterResponse = self.twitter_api.request(

@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from datetime import datetime
-from typing import List, Union, Callable
+from typing import List, Callable
 from unittest.mock import Mock, patch, MagicMock
 
 import pytest as pytest
@@ -52,8 +52,17 @@ class TestSearchNewTweets:
         ])
 
     @pytest.fixture(
-        ids=['no previous tweet', 'has previous tweet', 'found school', 'multiple twitter accounts'],
+        ids=['no previous tweet', 'no valid previous tweet', 'has previous tweet', 'found school', 'multiple twitter accounts'],
         params=[
+            Param(
+                read_as_dict={'id': '0'},
+                mock_twitter_conditions={
+                    'twitter_accounts': ['someTwitterHandle']
+                },
+                expected_options={'query': '(from:someTwitterHandle)', 'tweet.fields': 'id,author_id', 'start_time': '2021-06-30T23:00:00Z'},
+                decipher_school_side_effect=decipher_school_side_effect_none,
+                expected=[]
+            ),
             Param(
                 read_as_dict={},
                 mock_twitter_conditions={
