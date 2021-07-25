@@ -13,7 +13,8 @@ college_map = {
         '@UConnMBB',
         '@UConnHuskies',
         '@UConnWBB',
-        'james bouknight'
+        'james bouknight',
+        '@jam3s210'
     ],
     'duke': [
         ' duke ',
@@ -21,6 +22,7 @@ college_map = {
         '@dukebasketball',
         '@DukeWBB',
         'jalen johnson',
+        '@Jalen_J23'
         'matthew hurt',
         'd.j. steward',
         'dj steward'
@@ -31,6 +33,7 @@ college_map = {
         '@GatorsWBK',
         ' uf ',
         'tre mann',
+        '@tre2mann3',
         'scottie lewis'
     ],
     'fsu': [
@@ -41,7 +44,9 @@ college_map = {
         '@Seminoles',
         '@fsuwbb',
         'scottie barnes',
+        '@ScottBarnes561',
         'raiquan gray',
+        '@Tgray4',
         'm.j. walker',
         'mj walker',
         'koprivica'
@@ -54,7 +59,8 @@ college_map = {
         'illinois',
         '@IlliniMBB',
         '@IlliniWBB',
-        'ayo dosunmu'
+        'ayo dosunmu',
+        '@AyoDos_11'
     ],
     'kansas': [
         'kansas university',
@@ -68,6 +74,7 @@ college_map = {
         '@LSUsports',
         '@LSUwbkb',
         'cameron thomas',
+        '@24_camthomas',
         'cam thomas',
         'trendon watford',
         'javonte smart'
@@ -82,19 +89,23 @@ college_map = {
         'university of michigan',
         '@umichbball',
         '@umichwbball',
-        'franz wagner'
+        'franz wagner',
+        '@franzboogie'
     ],
     'ohiostate': [
         'ohio state',
         '@OhioStateHoops',
         '@OhioStAthletics',
-        'duane washington'
+        'duane washington',
+        '@dwizthekid4'
     ],
     'northcarolina': [
         'university of north carolina',
         '@UNC_Basketball',
         '@GoHeels',
-        'day-ron sharpe'
+        'day-ron sharpe',
+        'dayron sharpe',
+        '@dayron_sharpe'
     ],
     'notredame': [
         'notre dame',
@@ -107,6 +118,7 @@ college_map = {
         '@TexasLonghorns',
         '@TexasWBB',
         'kai jones',
+        '@242_jones',
         'jericho sims',
         'greg brown'
     ],
@@ -116,6 +128,7 @@ college_map = {
         '@VirginiaSports',
         '@UVAWomensHoops',
         'trey murphy',
+        '@Treymurphyiii',
         'sam hauser',
         'jay huff'
     ],
@@ -125,6 +138,7 @@ college_map = {
         '@UWBadgers',
         '@BadgerWBB',
         'd’mitrik trice',
-        'mitrik trice'
+        'mitrik trice',
+        '@DMitrikTrice0'
     ]
 }

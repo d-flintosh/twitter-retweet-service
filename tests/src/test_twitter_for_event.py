@@ -86,7 +86,7 @@ class TestTwitterForEvent:
         }
         mock_attributes = {
             'event': 'draft',
-            'league': 'nba'
+            'league_name': 'nba'
         }
         TwitterForEvent(attributes=mock_attributes).find_retweet()
 

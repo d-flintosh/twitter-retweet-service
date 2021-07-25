@@ -10,7 +10,7 @@ class TwitterForEvent:
         self.credentials = get_credentials()
         self.application_credentials = self.credentials.get('application_account')
         self.event = attributes.get('event')
-        self.league_name = attributes.get('league')
+        self.league_name = attributes.get('league_name')
         self.twitter_conditions = events.get(self.event).get(self.league_name)
 
     def find_retweet(self):
