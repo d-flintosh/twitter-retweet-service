@@ -29,7 +29,7 @@ def entrypoint(event, context):
     school = attributes.get('school', None)
     event = attributes.get('event', None)
     print(f'Incoming Data: {data}')
-    if school:
-        TwitterForPlayer(school=school, content=data).send_tweet()
-    elif event:
+    if event:
         TwitterForEvent(attributes=attributes).find_retweet()
+    elif school:
+        TwitterForPlayer(school=school, content=data).send_tweet()
