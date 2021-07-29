@@ -20,8 +20,6 @@ class SearchNewTweets:
         most_recent_tweet_url = f'{self.event}_{self.league_name}.json'
         most_recent_tweet = gcs.read_as_dict(url=most_recent_tweet_url)
 
-        start_time = (datetime.now() - timedelta(hours=1)).isoformat(timespec='seconds')
-
         try:
             query = f'(from:{" OR from:".join(self.twitter_conditions.get("twitter_accounts"))})'
             request_options = {
@@ -33,6 +31,7 @@ class SearchNewTweets:
             if most_recent_tweet_id and int(most_recent_tweet_id) > 0:
                 request_options['since_id'] = most_recent_tweet.get('id')
             else:
+                start_time = (datetime.now() - timedelta(hours=1)).isoformat(timespec='seconds')
                 request_options['start_time'] = f'{start_time}Z'
 
             response: TwitterResponse = self.twitter_api.request(
@@ -54,7 +53,8 @@ class SearchNewTweets:
             most_recent_tweet = {
                 'id': max_id
             }
-            gcs.write(url=most_recent_tweet_url, contents=most_recent_tweet)
+            if max_id != '0':
+                gcs.write(url=most_recent_tweet_url, contents=most_recent_tweet)
             return tweets_to_retweet
 
         except TwitterRequestError as e:
