@@ -26,13 +26,14 @@ class SearchNewTweets:
             query = f'(from:{" OR from:".join(self.twitter_conditions.get("twitter_accounts"))})'
             request_options = {
                 'query': query,
-                'tweet.fields': 'id,author_id',
-                'start_time': f'{start_time}Z'
+                'tweet.fields': 'id,author_id'
             }
 
             most_recent_tweet_id = most_recent_tweet.get('id', None)
             if most_recent_tweet_id and int(most_recent_tweet_id) > 0:
                 request_options['since_id'] = most_recent_tweet.get('id')
+            else:
+                request_options['start_time'] = f'{start_time}Z'
 
             response: TwitterResponse = self.twitter_api.request(
                 'tweets/search/recent', request_options

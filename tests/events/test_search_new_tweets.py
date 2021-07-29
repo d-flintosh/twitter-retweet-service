@@ -77,7 +77,7 @@ class TestSearchNewTweets:
                 mock_twitter_conditions={
                     'twitter_accounts': ['someTwitterHandle']
                 },
-                expected_options={'query': '(from:someTwitterHandle)', 'tweet.fields': 'id,author_id', 'start_time': '2021-06-30T23:00:00Z', 'since_id': '2'},
+                expected_options={'query': '(from:someTwitterHandle)', 'tweet.fields': 'id,author_id', 'since_id': '2'},
                 decipher_school_side_effect=decipher_school_side_effect_none,
                 expected=[]
             ),
@@ -86,7 +86,7 @@ class TestSearchNewTweets:
                 mock_twitter_conditions={
                     'twitter_accounts': ['someTwitterHandle']
                 },
-                expected_options={'query': '(from:someTwitterHandle)', 'tweet.fields': 'id,author_id', 'start_time': '2021-06-30T23:00:00Z', 'since_id': '2'},
+                expected_options={'query': '(from:someTwitterHandle)', 'tweet.fields': 'id,author_id', 'since_id': '2'},
                 decipher_school_side_effect=decipher_school_side_effect,
                 expected=[{'school': 'someSchool', 'tweet': {'id': '100', 'text': 'some other text'}}]
             ),
