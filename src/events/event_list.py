@@ -13,7 +13,7 @@ events = {
     'olympics': {
         'olympics': {
             'twitter_accounts': ['TeamUSA', 'Olympics', 'NBCOlympics', 'BAHNOC', 'TeamCanada', 'teambelgium',
-                                 'TeamIreland', 'USAVBeach', 'AUSOlympicTeam', 'OlympicTeamFI']
+                                 'TeamIreland', 'USAVBeach', 'AUSOlympicTeam', 'OlympicTeamFI', 'usatf', 'usabasketball']
         }
     }
 }
