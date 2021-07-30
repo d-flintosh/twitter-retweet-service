@@ -14,7 +14,22 @@ college_map = {
         '@UConnHuskies',
         '@UConnWBB',
         'james bouknight',
-        '@jam3s210'
+        '@jam3s210',
+        'sue bird',
+        'diana taurasi',
+        'tina charles',
+        'breanna stewart',
+        'napheesa collier',
+        'jen rizzotti',
+        'gabby williams',
+        'kia nurse',
+        'aaliyah edwards',
+        'stefanie dolson',
+        'gavin edwards',
+        'niels giffey',
+        'roisin upton',
+        'Cecile Pieper',
+        'stephanie labbe'
     ],
     'duke': [
         ' duke ',
