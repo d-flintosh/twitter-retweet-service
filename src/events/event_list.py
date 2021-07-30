@@ -9,5 +9,11 @@ events = {
         'olympics': {
             'twitter_accounts': ['TeamUSA', 'Olympics', 'NBCOlympics', 'BAHNOC', 'TeamCanada', 'teambelgium', 'TeamIreland', 'USAVBeach', 'AUSOlympicTeam', 'OlympicTeamFI']
         }
+    },
+    'olympics': {
+        'olympics': {
+            'twitter_accounts': ['TeamUSA', 'Olympics', 'NBCOlympics', 'BAHNOC', 'TeamCanada', 'teambelgium',
+                                 'TeamIreland', 'USAVBeach', 'AUSOlympicTeam', 'OlympicTeamFI']
+        }
     }
 }
