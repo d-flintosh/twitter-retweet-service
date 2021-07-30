@@ -9,7 +9,7 @@ college_map = {
     ],
     'connecticut': [
         'connecticut',
-        'uconn',
+        ' uconn ',
         '@UConnMBB',
         '@UConnHuskies',
         '@UConnWBB',
@@ -80,7 +80,7 @@ college_map = {
         '@UGABasketball'
     ],
     'illinois': [
-        'illinois',
+        'university of illinois',
         '@IlliniMBB',
         '@IlliniWBB',
         'ayo dosunmu',
@@ -92,7 +92,7 @@ college_map = {
         '@KUWBball'
     ],
     'lsu': [
-        'lsu',
+        ' lsu ',
         'louisiana state',
         '@LSUBasketball',
         '@LSUsports',
