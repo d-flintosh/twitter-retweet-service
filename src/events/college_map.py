@@ -3,7 +3,7 @@ college_map = {
         'arizona state',
         '@SunDevilHoops',
         '@TheSunDevils',
-        'ASU',
+        ' ASU ',
         '@SunDevilWBB',
         'josh christopher'
     ],
