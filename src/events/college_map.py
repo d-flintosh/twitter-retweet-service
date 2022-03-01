@@ -136,6 +136,8 @@ college_map = {
         'luke loucks',
         'jashaun corbin',
         'jermaine johnson',
+        '@Jashaun06',
+        '@ii_jermaine'
     ],
     'georgia': [
         'university of georgia',
@@ -174,9 +176,12 @@ college_map = {
         'justin shaffer',
         'channing tindall',
         'quay walker',
-         'travon walker',
-         'zamir white',
-         'devonte wyatt',
+        'travon walker',
+        'zamir white',
+        'devonte wyatt',
+        '@thegreat__4',
+        '@NakobeDean',
+        '@George33101361'
     ],
     'illinois': [
         'university of illinois',
@@ -250,6 +255,7 @@ college_map = {
         'ed ingram',
         'derek stingley',
         'cade york',
+        '@Stingley_Island'
     ],
     'miami': [
         'university of miami',
@@ -268,6 +274,7 @@ college_map = {
         'jonathan ford',
         'd\'eriq king',
         'charleston rambo',
+        '@DeriqKing_'
     ],
     'michigan': [
         'university of michigan',
@@ -308,7 +315,10 @@ college_map = {
         'aidan hutchinson',
         'david ojabo',
         'josh ross',
-        'andrew stueber'
+        'andrew stueber',
+        '@aidanhutch97',
+        '@DavidOjabo',
+        '@H2_3125'
     ],
     'ohiostate': [
         'ohio state',
@@ -333,6 +343,7 @@ college_map = {
         'jeremy ruckert',
         'tyreke smith',
         'garrett wilson',
+        '@chrisolave_'
     ],
     'northcarolina': [
         'university of north carolina',
@@ -355,7 +366,8 @@ college_map = {
         'sam howell',
         'joshua ezeudu',
         'jeremiah gemmel',
-        'ty chandler'
+        'ty chandler',
+        '@Sam7Howell'
     ],
     'notredame': [
         'notre dame',
@@ -433,6 +445,7 @@ college_map = {
         'rose lavelle',
         'leo chenal',
         'jake ferguson',
-        'jack sanborn'
+        'jack sanborn',
+        '@JackSanborn79'
     ]
 }
