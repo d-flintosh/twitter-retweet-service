@@ -6,6 +6,9 @@ events = {
         'mlb': {
             'twitter_accounts': ['MLBDraft']
         },
+        'nfl': {
+            'twitter_accounts': ['NFL', 'NFLDraft']
+        },
         'olympics': {
             'twitter_accounts': ['TeamUSA', 'Olympics', 'NBCOlympics', 'BAHNOC', 'TeamCanada', 'teambelgium', 'TeamIreland', 'USAVBeach', 'AUSOlympicTeam', 'OlympicTeamFI']
         }

@@ -5,7 +5,11 @@ college_map = {
         '@TheSunDevils',
         ' ASU ',
         '@SunDevilWBB',
-        'josh christopher'
+        'josh christopher',
+        'kellen diesch',
+        'rachaad white',
+        'dohnovan west',
+        'curtis hodges'
     ],
     'connecticut': [
         'connecticut',
@@ -28,8 +32,9 @@ college_map = {
         'gavin edwards',
         'niels giffey',
         'roisin upton',
-        'Cecile Pieper',
-        'stephanie labbe'
+        'cecile pieper',
+        'stephanie labbe',
+        'travis jones'
     ],
     'duke': [
         ' duke ',
@@ -85,7 +90,11 @@ college_map = {
         'mark kolozsvary',
         'eddie lovett',
         'hakim sani brown',
-        'kieran smith'
+        'kieran smith',
+        'zach carter',
+        'kaiir elam',
+        'jeremiah moon',
+        'dameon pierce',
     ],
     'fsu': [
         ' fsu ',
@@ -124,7 +133,9 @@ college_map = {
         'emir muratovic',
         'nick lucena',
         'jason lochhead',
-        'luke loucks'
+        'luke loucks',
+        'jashaun corbin',
+        'jermaine johnson',
     ],
     'georgia': [
         'university of georgia',
@@ -151,7 +162,21 @@ college_map = {
         'kendell williams',
         'jack bauerle',
         'dan laak',
-        'mike mobley'
+        'mike mobley',
+        'jake camarda',
+        'lewis cine',
+        'james cook',
+        'jordan davis',
+        'nakobe dean',
+        'derion kendrick',
+        'george pickens',
+        'jamaree salyer',
+        'justin shaffer',
+        'channing tindall',
+        'quay walker',
+         'travon walker',
+         'zamir white',
+         'devonte wyatt',
     ],
     'illinois': [
         'university of illinois',
@@ -167,7 +192,9 @@ college_map = {
         'thomas pieters',
         'jordyn poulter',
         'rajeev ram',
-        'erin virtue'
+        'erin virtue',
+        'kerby joseph',
+        'blake hayes'
     ],
     'kansas': [
         'kansas university',
@@ -213,7 +240,16 @@ college_map = {
         'neal skupski',
         'marcus daniell',
         'madelene sagstrom',
-        'duop reath'
+        'duop reath',
+        'damone clark',
+        'ty davis-price',
+        'austin deculus',
+        'neil farrell',
+        'cordale flott',
+        'chasen hines',
+        'ed ingram',
+        'derek stingley',
+        'cade york',
     ],
     'miami': [
         'university of miami',
@@ -227,7 +263,11 @@ college_map = {
         'murielle ahoure',
         'ebony morrison',
         'alysha newman',
-        'kristina knott'
+        'kristina knott',
+        'bubba bolden',
+        'jonathan ford',
+        'd\'eriq king',
+        'charleston rambo',
     ],
     'michigan': [
         'university of michigan',
@@ -260,7 +300,15 @@ college_map = {
         'abby andrews',
         'amy ridge',
         'stevan micic',
-        'sean bormet'
+        'sean bormet',
+        'vincent gray',
+        'hassan haskins',
+        'dax hill',
+        'chris hinton',
+        'aidan hutchinson',
+        'david ojabo',
+        'josh ross',
+        'andrew stueber'
     ],
     'ohiostate': [
         'ohio state',
@@ -277,7 +325,14 @@ college_map = {
         'nichelle prince',
         'misha koudinov',
         'maggie barrie',
-        'eric harrison'
+        'eric harrison',
+        'haskell garrett',
+        'thayer munford jr',
+        'chris olave',
+        'nick petit-frere',
+        'jeremy ruckert',
+        'tyreke smith',
+        'garrett wilson',
     ],
     'northcarolina': [
         'university of north carolina',
@@ -296,7 +351,11 @@ college_map = {
         'katie bowen',
         'lotte wubben-moy',
         'lucy bronze',
-        'kenny selmon'
+        'kenny selmon',
+        'sam howell',
+        'joshua ezeudu',
+        'jeremiah gemmel',
+        'ty chandler'
     ],
     'notredame': [
         'notre dame',
@@ -308,7 +367,12 @@ college_map = {
         'jewell loyd',
         'skylar diggins-smith',
         'angie akers',
-        'jackie young'
+        'jackie young',
+        'kevin austin jr',
+        'jack coan',
+        'kyle hamilton',
+        'myron tagovailoa-amosa',
+        'kyren williams',
     ],
     'texas': [
         'university of texas',
@@ -328,7 +392,8 @@ college_map = {
         'kevin durant',
         'ariel atkins',
         'chiaka ogbogu',
-        'cat osterman'
+        'cat osterman',
+        'josh thompson'
     ],
     'virginia': [
         'university of virginia',
@@ -347,7 +412,8 @@ college_map = {
         'emily sonnett',
         'joe bell',
         'filip mihaljević',
-        'michaela meyer'
+        'michaela meyer',
+        'jelani woods'
     ],
     'wisconsin': [
         'wisconsin',
@@ -364,6 +430,9 @@ college_map = {
         'phoebe bacon',
         'yigit aslan',
         'lauren carlini',
-        'rose lavelle'
+        'rose lavelle',
+        'leo chenal',
+        'jake ferguson',
+        'jack sanborn'
     ]
 }
