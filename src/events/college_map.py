@@ -34,7 +34,8 @@ college_map = {
         'roisin upton',
         'cecile pieper',
         'stephanie labbe',
-        'travis jones'
+        'travis jones',
+        'tyrese martin'
     ],
     'duke': [
         ' duke ',
@@ -58,7 +59,14 @@ college_map = {
         'ashley twichell',
         'celine boutier',
         'leona maguire',
-        'jessica springsteen'
+        'jessica springsteen',
+        'paolo banchero',
+        '@Pp_doesit',
+        'aj griffin',
+        '@whoisAG21',
+        'mark williams',
+        'wendell moore',
+        'trevor keels'
     ],
     'florida': [
         'university of florida',
@@ -137,7 +145,8 @@ college_map = {
         'jashaun corbin',
         'jermaine johnson',
         '@Jashaun06',
-        '@ii_jermaine'
+        '@ii_jermaine',
+        'john butler'
     ],
     'georgia': [
         'university of georgia',
@@ -199,7 +208,9 @@ college_map = {
         'rajeev ram',
         'erin virtue',
         'kerby joseph',
-        'blake hayes'
+        'blake hayes',
+        'kofi cockburn',
+        '@kxng_alpha'
     ],
     'kansas': [
         'kansas university',
@@ -212,7 +223,10 @@ college_map = {
         'christina clemons',
         'stanley redwine',
         'andy kokhanovsky',
-        'michael whittlesey'
+        'michael whittlesey',
+        'ochai agbaji',
+        '@youngoch',
+        'christian braun'
     ],
     'lsu': [
         ' lsu ',
@@ -255,7 +269,8 @@ college_map = {
         'ed ingram',
         'derek stingley',
         'cade york',
-        '@Stingley_Island'
+        '@Stingley_Island',
+        'tari eason'
     ],
     'miami': [
         'university of miami',
@@ -318,7 +333,9 @@ college_map = {
         'andrew stueber',
         '@aidanhutch97',
         '@DavidOjabo',
-        '@H2_3125'
+        '@H2_3125',
+        'moussa diabate',
+        'caleb houstan'
     ],
     'ohiostate': [
         'ohio state',
@@ -343,7 +360,11 @@ college_map = {
         'jeremy ruckert',
         'tyreke smith',
         'garrett wilson',
-        '@chrisolave_'
+        '@chrisolave_',
+        'malaki branham',
+        '@MalakiBranham',
+        'e.j. liddell',
+        'ej liddell'
     ],
     'northcarolina': [
         'university of north carolina',
@@ -385,6 +406,7 @@ college_map = {
         'kyle hamilton',
         'myron tagovailoa-amosa',
         'kyren williams',
+        'blake wesley'
     ],
     'texas': [
         'university of texas',
@@ -446,6 +468,8 @@ college_map = {
         'leo chenal',
         'jake ferguson',
         'jack sanborn',
-        '@JackSanborn79'
+        '@JackSanborn79',
+        'johnny davis',
+        '@JohnnyDavis'
     ]
 }
