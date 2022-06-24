@@ -28,6 +28,7 @@ class SearchNewTweets:
             }
 
             most_recent_tweet_id = most_recent_tweet.get('id', None)
+            print(most_recent_tweet_id)
             if most_recent_tweet_id and int(most_recent_tweet_id) > 0:
                 request_options['since_id'] = most_recent_tweet.get('id')
             else:
